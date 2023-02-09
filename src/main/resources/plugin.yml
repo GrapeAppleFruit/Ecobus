@@ -1,0 +1,33 @@
+name: Ecobus
+version: '${project.version}'
+main: busch.economy.CustomEconomyAPI
+api-version: 1.19
+author: Busch
+description: EcoBus is a economy library/plugin for Bukkit/Spigot/Paper
+commands:
+  give:
+    description: Give money to a player
+    usage: /give [player] [amount]
+  remove:
+    description: Remove money from a player
+    usage: /remove [player] [amount]
+  balance:
+    description: Check a player's balance
+    usage: /balance [player]
+  pay:
+    description: Pay players from your balance
+    usage: /pay [amount]
+permissions:
+  ecobus.give:
+    description: Allow access to the give command
+    default: op
+  ecobus.remove:
+    description: Allow access to the remove command
+    default: op
+  ecobus.balance:
+    description: Allow access to the balance command
+    default: true
+  ecobus.pay:
+    description: Allow access to the deposit command
+    default: true
+
